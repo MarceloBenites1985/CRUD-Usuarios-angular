@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ButtonComponent } from './components/button/button.component';
 import { LoginComponent } from './pages/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,10 +20,14 @@ import { environment } from '../environments/environment.development';
 import { CrudComponent } from './pages/crud/crud.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatDialogModule}  from '@angular/material/dialog';
 
 import { MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule} from '@angular/material/paginator';
-import {MatSortModule} from '@angular/material/sort';
+import {MatSort, MatSortModule} from '@angular/material/sort';
+import { ModalViewUserComponent } from './pages/crud/modal-view-user/modal-view-user.component';
+import { ModalFormUserComponent } from './pages/crud/modal-form-user/modal-form-user.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -35,12 +39,15 @@ import {MatSortModule} from '@angular/material/sort';
     HomeComponent,
     MenuComponent,
     CrudComponent,
+    ModalViewUserComponent,
+    ModalFormUserComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     //ANGULAR MATERIAL
     MatIconModule,
     MatProgressSpinnerModule,
@@ -48,7 +55,10 @@ import {MatSortModule} from '@angular/material/sort';
     MatInputModule,
     MatTableModule,
     MatSortModule, 
+    MatSort,
     MatPaginatorModule,
+    MatDialogModule,
+    MatSelectModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [
