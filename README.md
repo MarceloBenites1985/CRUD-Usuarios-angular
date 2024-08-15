@@ -24,7 +24,7 @@
 
 ## Introdução
 
-Este projeto é um exemplo de aplicação CRUD (Create, Read, Update, Delete) para cadastro de usuários, desenvolvido utilizando Angular 17, Firebase e Angular Material. Ele abrange desde a configuração inicial até a implementação das funcionalidades principais, como adição, edição e remoção de usuários.
+Este projeto é um exemplo de aplicação CRUD (Create, Read, Update, Delete) para cadastro de usuários, desenvolvido utilizando Angular 17, Typscript , Firebase e Angular Material . Ele abrange desde a configuração inicial até a implementação das funcionalidades principais, como adição, edição e remoção de usuários.
 
 ## Configuração Inicial
 
@@ -164,6 +164,27 @@ export const environment = {
     appId: "APP_ID"
   }
 };
+
+```
+## Arquivo dos Modulos ` app.module.ts `
+
+Neste arquivo é o arquivo responsável pelas importações do projeto é aqui que ficas os imports e as declarações do projeto.
+
+```
+import { NgModule } from '@angular/core';...
+
+//ANGULAR MATERIAL
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';...
+
+
+
+@NgModule({
+  declarations: [...],
+  imports: [...],
+  providers: [...],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
 ```
 
