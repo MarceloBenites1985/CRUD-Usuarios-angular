@@ -216,8 +216,6 @@ O projeto utiliza vários componentes do Angular Material, incluindo tabelas, sp
 - **Spinner (MatSpinner)**: Utilizado para indicar o carregamento dos dados.
 - **Filtro (MatFormField + MatInput)**: Um campo de entrada utilizado para filtrar os dados da tabela em tempo real.
   
-![Captura de tela 2024-08-14 144405](https://github.com/user-attachments/assets/ea56aa80-4719-4ed1-89c8-dfb773992d10)
-![Captura de tela 2024-08-14 144339](https://github.com/user-attachments/assets/efa4b854-d565-40bd-8758-443da8d55cc6)
 ![Captura de tela 2024-08-14 144405](https://github.com/user-attachments/assets/deeacbfc-440d-4125-a469-d5b078ea72d2)
 
 
