@@ -215,12 +215,11 @@ O projeto utiliza vários componentes do Angular Material, incluindo tabelas, sp
 - **Tabela (MatTable)**: A tabela é utilizada para exibir a lista de usuários. Ela permite ordenação, paginação e filtragem.
 - **Spinner (MatSpinner)**: Utilizado para indicar o carregamento dos dados.
 - **Filtro (MatFormField + MatInput)**: Um campo de entrada utilizado para filtrar os dados da tabela em tempo real.
+  
+![Captura de tela 2024-08-14 144405](https://github.com/user-attachments/assets/ea56aa80-4719-4ed1-89c8-dfb773992d10)
+![Captura de tela 2024-08-14 144339](https://github.com/user-attachments/assets/efa4b854-d565-40bd-8758-443da8d55cc6)
+![Captura de tela 2024-08-14 144405](https://github.com/user-attachments/assets/deeacbfc-440d-4125-a469-d5b078ea72d2)
 
-![Captura de tela 2024-08-14 144316.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7ae9fec6-1e2d-4638-8a78-4cdd4eab2ea1/9a161c9f-9f88-4f69-8569-b65982318b9e/Captura_de_tela_2024-08-14_144316.png)
-
-![Captura de tela 2024-08-14 144339.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7ae9fec6-1e2d-4638-8a78-4cdd4eab2ea1/93daa8b1-3d68-490a-8963-5b8726190403/Captura_de_tela_2024-08-14_144339.png)
-
-![Captura de tela 2024-08-14 144405.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7ae9fec6-1e2d-4638-8a78-4cdd4eab2ea1/faf47391-d6e7-4efd-bd04-698c07188e3f/Captura_de_tela_2024-08-14_144405.png)
 
 ### Configuração do `modal-form-user.component`
 
@@ -306,7 +305,7 @@ No arquivo de template, a tabela é configurada da seguinte forma:
 
 O `MatSpinner` é utilizado durante o carregamento dos dados:
 
-![Captura de tela 2024-08-14 224821.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7ae9fec6-1e2d-4638-8a78-4cdd4eab2ea1/bc31e2c8-842e-4b68-8ead-5260317d8b11/Captura_de_tela_2024-08-14_224821.png)
+![Captura de tela 2024-08-14 224821](https://github.com/user-attachments/assets/6ab0674a-9876-4679-9b22-97b46ae10300)
 
 ```html
 htmlCopiar código
