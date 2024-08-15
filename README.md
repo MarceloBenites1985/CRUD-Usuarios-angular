@@ -5,7 +5,7 @@
 ## Sumário
 
 1. [Introdução](#Introdução)
-2. [Configuração Inicial](https://www.notion.so/e7fc35ed24ce4c49a2bff01243403155?pvs=21)
+2. [Configuração Inicial](#ConfiguraçãoInicial)
 3. [Instalação de Dependências](https://www.notion.so/e7fc35ed24ce4c49a2bff01243403155?pvs=21)
 4. [Estrutura do Projeto](https://www.notion.so/e7fc35ed24ce4c49a2bff01243403155?pvs=21)
 5. [Configuração do Firebase](https://www.notion.so/e7fc35ed24ce4c49a2bff01243403155?pvs=21)
