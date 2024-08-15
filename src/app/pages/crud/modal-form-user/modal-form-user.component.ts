@@ -42,6 +42,7 @@ export class ModalFormUserComponent {
       ];
 
       formUser: FormGroup;
+      editUse: boolean = false;
 
 name: string|number|null;
 
@@ -54,6 +55,9 @@ name: string|number|null;
 
       ngOnInit(){
         this.buildForm();
+        if(this.data && this.data.name){
+          this.editUse = true;
+        }
       }
       //Salvar usuário
       saveUser(){
@@ -61,32 +65,32 @@ name: string|number|null;
 
           if(this.data && this.data.name){
              
-            //EDITAR USUARIO
-            this.userService.update(this.data.firebaseId, objectUserForm).then(
-              (response: any) => {
-                window.alert('Usuario Editado com sucesso');
-                this.closeModal();
-              }
-            )
-            .catch(
-              err => {
-                  window.alert("Houve um erro ao editar o usuario");
-                  console.error(err);
-            })
+              //EDITAR USUARIO
+              this.userService.update(this.data.firebaseId, objectUserForm).then(
+                (response: any) => {
+                  window.alert('Usuario Editado com sucesso');
+                  this.closeModal();
+                }
+              )
+              .catch(
+                err => {
+                    window.alert("Houve um erro ao editar o usuario");
+                    console.error(err);
+              })
 
-          }else{
-            //SALVAR USUARIO
-            this.userService.addUser(objectUserForm).then(
-              (response: any) => {
-                window.alert('Usuario Salvo com sucesso');
-                this.closeModal();
-              }
-            )
-            .catch(
-              err => {
-                  window.alert("Houve um erro ao salvar o usuario");
-                  console.error(err);
-            })
+            }else{
+              //SALVAR USUARIO
+              this.userService.addUser(objectUserForm).then(
+                (response: any) => {
+                  window.alert('Usuario Salvo com sucesso');
+                  this.closeModal();
+                }
+              )
+              .catch(
+                err => {
+                    window.alert("Houve um erro ao salvar o usuario");
+                    console.error(err);
+              })
           }
 
           

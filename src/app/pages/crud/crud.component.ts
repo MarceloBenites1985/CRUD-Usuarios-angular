@@ -20,6 +20,7 @@ export class CrudComponent {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
+delete: any;
 
   constructor(
     private usersService: UsersService,
@@ -36,7 +37,8 @@ export class CrudComponent {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
-
+   
+    //FUNÇÕES DOS USUARIOS
 
   getListerUsers(){
       this.usersService.getAllUsers().subscribe({
@@ -54,6 +56,18 @@ export class CrudComponent {
         }
       });
   }
+
+  deleteUser(firebaseId: string){
+        this.usersService.deleteUser(firebaseId).then(
+          (response: any) => {
+            window.alert("Usuario Excluido com sucesso")
+          }
+        );
+  }
+
+  //FIM FUNÇÕES DOS USUARIOS
+
+
 
     applyFilter(event: Event) {
       const filterValue = (event.target as HTMLInputElement).value;
