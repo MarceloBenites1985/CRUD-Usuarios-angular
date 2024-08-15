@@ -307,8 +307,7 @@ O `MatProgressSpinnerModule` é utilizado durante o carregamento dos dados:
 ![Captura de tela 2024-08-15 101621](https://github.com/user-attachments/assets/b083e136-25b3-4395-8783-21d3f46e3c55)
 
 
-```html
-app.module.ts
+```codico do file app.module.ts
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
@@ -321,6 +320,12 @@ htmlCopiar código
 		<mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
 		 <p class="info-spinner">4/5</p>
  </div>
+
+```
+```para mudar de cor
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle, .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic{
+    stroke: var(--primary-color) !important;
+}
 
 ```
 
