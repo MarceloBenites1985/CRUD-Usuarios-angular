@@ -366,7 +366,7 @@ addUser(user: User){
 
 ### Editar Usuário
 
-Para editar um usuário existente, recupere os dados no formulário e chame o método `updateUser`:
+Para editar um usuário existente, recupere os dados no formulário e chame o método `update`:
 
 ```tsx
 typescriptCopiar código
