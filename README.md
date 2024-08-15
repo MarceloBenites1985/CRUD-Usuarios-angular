@@ -216,7 +216,8 @@ O projeto utiliza vários componentes do Angular Material, incluindo tabelas, sp
 - **Spinner (MatSpinner)**: Utilizado para indicar o carregamento dos dados.
 - **Filtro (MatFormField + MatInput)**: Um campo de entrada utilizado para filtrar os dados da tabela em tempo real.
   
-![Captura de tela 2024-08-14 144405](https://github.com/user-attachments/assets/deeacbfc-440d-4125-a469-d5b078ea72d2)
+![Captura de tela 2024-08-15 101540](https://github.com/user-attachments/assets/0c0c107f-836b-477f-811a-2a8a8bf9c66a)
+
 
 
 ### Configuração do `modal-form-user.component`
@@ -299,11 +300,20 @@ No arquivo de template, a tabela é configurada da seguinte forma:
 
 ```
 
-### Configuração do `MatSpinner`
+### Configuração do `MatProgressSpinnerModule`
 
-O `MatSpinner` é utilizado durante o carregamento dos dados:
+O `MatProgressSpinnerModule` é utilizado durante o carregamento dos dados:
 
-![Captura de tela 2024-08-14 224821](https://github.com/user-attachments/assets/6ab0674a-9876-4679-9b22-97b46ae10300)
+![Captura de tela 2024-08-15 101621](https://github.com/user-attachments/assets/b083e136-25b3-4395-8783-21d3f46e3c55)
+
+
+```html
+app.module.ts
+
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+```
+
 
 ```html
 htmlCopiar código
